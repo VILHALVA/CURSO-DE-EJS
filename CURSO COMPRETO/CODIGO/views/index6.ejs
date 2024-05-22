@@ -1,0 +1,17 @@
+<%- include('partials/header', { title: 'Instruções de Login' }) %>
+
+<h1>AULA 6</h1>
+<p>
+    <% if (name && age) { %>
+        Muito bem, <%= name %>! Você tem <%= age %> Anos!
+    <% } else { %>
+        NOME E/OU IDADE ESTÁ VAZIO. DIGITE NA URL: <br>
+            <code>
+                http://localhost:8000/6?name=VILHALVA&age=28
+            </code>
+    <% } %>
+</p> 
+
+<%- include('partials/footer') %> <br>
+
+<a href="/">VOLTAR AO MENU</a>
